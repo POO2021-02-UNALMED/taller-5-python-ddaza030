@@ -1,11 +1,12 @@
 from gestion.zoologico import Zoologico
 
 class Zona():
-    def __init__(self, nombre = None, zoo = Zoologico()):
+    def __init__(self, nombre = None, zoo = None):
         self._nombre = nombre
         self._zoo = zoo
         self._animales = []
-        zoo.agregarZonas(self)
+        if (zoo != None):
+            zoo.agregarZonas(self)
 
     def agregarAnimales(self, animal):
         self._animales.append(animal)

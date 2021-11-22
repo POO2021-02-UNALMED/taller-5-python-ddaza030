@@ -22,7 +22,7 @@ class Pez(Animal):
     
     def setColorEscamas(self, color):
         self._colorEscamas = color
-    def getColorescamas(self):
+    def getColorEscamas(self):
         return self._colorEscamas
 
     def setCantidadAletas(self, color):
